@@ -10,7 +10,7 @@
       "image: struct<bytes: binary, path: string> - bytes holds an 8-bit grayscale PNG (28x28), path is unused/empty in this file",
       "label: int64, 0-9"
     ],
-    "note": "the proposal's original template guessed a raw uint8 pixel array; the actual schema (checked directly via pyarrow) is HuggingFace's standard image-dataset layout, with each image PNG-encoded rather than stored as raw pixels - perceptron/mnist_data.py's _decode_grayscale_png already accounts for this"
+    "note": "the proposal's original template guessed a raw uint8 pixel array; the actual schema (checked directly via pyarrow) is HuggingFace's standard image-dataset layout, with each image PNG-encoded rather than stored as raw pixels - indrajala_ml/mnist_data.py's _decode_grayscale_png already accounts for this"
   },
-  "notes": "Well-known real-MNIST first-5 training labels: 5,0,4,1,9 - a useful load-order sanity check, already relied on by perceptron's own test suite (tests/test_mnist_data.py)."
+  "notes": "Well-known real-MNIST first-5 training labels: 5,0,4,1,9 - a useful load-order sanity check, already relied on by indrajala-ml's own test suite (tests/test_mnist_data.py)."
 }

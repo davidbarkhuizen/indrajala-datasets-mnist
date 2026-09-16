@@ -1,7 +1,7 @@
 # indrajala-datasets-mnist
 
 The MNIST handwritten digit database, packaged as Parquet, for use by
-[`perceptron`](https://github.com/davidbarkhuizen/first-principles-networks) and other consumers
+[`indrajala-ml`](https://github.com/davidbarkhuizen/indrajala-ml) and other consumers
 that want a pinned, checksum-verified source rather than a manually-supplied local copy.
 
 This repo is a documented *source*, not a preprocessed cache: the data is stored in the same
@@ -34,7 +34,7 @@ table = pq.read_table("data/mnist-train.parquet")
 
 See `metadata.json`'s `source` field. The dataset's own license/canonical source URL is currently
 unverified (marked `TODO` there) - verify before relying on this for anything beyond the same
-personal/research use `perceptron` itself makes of it.
+personal/research use `indrajala-ml` itself makes of it.
 
 ## versioning
 
